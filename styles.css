@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e0c5;
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.site-title {
+    font-family: 'Pacifico', cursive;
+    color: #c71616;
+    font-size: 3rem;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: rgba(240, 224, 197, 0.8);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.santa-image {
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-info {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #c71616;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: #003300;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #D32F2F;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b51414;
+}
+
+#map-container {
+    margin-top: 30px;
+}
+
+.cta-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+footer {
+    background-color: #003300;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#snowflakes-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .site-title {
+        font-size: 2.5rem;
+    }
+
+    .santa-image {
+        width: 120px;
+    }
+
+    .contact-info {
+        padding: 15px;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #c71616; /* Christmas red color */
+}
+
+.fa-facebook {
+    color: #3b5998; /* Facebook blue */
+}
+
+.fa-instagram {
+    color: #e1306c; /* Instagram pink */
+}
